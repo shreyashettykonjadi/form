@@ -107,43 +107,44 @@ li {
 
 ul {
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
     list-style: none;
-}   
+}
 
-input+span{
+input+span {
     position: relative;
 }
 
-input+span::after{
+input+span::after {
     position: absolute;
+    height: 1.5rem;
     display: block;
-    bottom: -40px; 
+    bottom: -40px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input:invalid:not(:focus):not(:placeholder-shown) + span::after {
-  content: "Invalid input";
-  color: #780281;
+input:invalid:not(:focus):not(:placeholder-shown)+span::after {
+    content: "Invalid input";
+    color: #780281;
 }
 
-input[type="password"]:invalid:not(:focus):not(:placeholder-shown)  +span::after{
+input[type="password"]:invalid:not(:focus):not(:placeholder-shown)+span::after {
     color: #780281;
     content: "Password requires minimum 8 charecters";
 }
 
-input[type="email"]:invalid:not(:focus):not(:placeholder-shown)+span::after{
+input[type="email"]:invalid:not(:focus):not(:placeholder-shown)+span::after {
     color: #780281;
     content: "Enter valid email address";
 }
 
-.submit{
+.submit {
     margin-top: 0;
     padding: 1.5% 3%;
 }
 
-button{
+button {
     margin-bottom: 2%;
     appearance: none;
     padding: 0.8rem;
@@ -154,7 +155,7 @@ button{
     color: #780281;
 }
 
-a{
+a {
     text-decoration: none;
     color: #780281;
 }
